@@ -1,4 +1,4 @@
-# MEC Change Order Status
+# MEC Change Order Status - Mangeto Extension
 
 This extension expands core Magento functionality for order status management.
 
@@ -18,6 +18,10 @@ This extension expands core Magento functionality for order status management.
 # Compatibility
 
 - Magento >= 1.6 (tested for 1.9.1)
+
+# Copyright
+
+(c) 2015 devdl
 
 
 

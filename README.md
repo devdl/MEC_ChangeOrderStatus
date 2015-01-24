@@ -1,7 +1,6 @@
-# MEC_ChangeOrderStatus
-This extensions expands core Magento functionality for order status managment.
+# MEC Change Order Status
 
-This extension allows shop owners to set up email notifications for order statuses and change order statuses in bulk.
+This extension expands core Magento functionality for order status management.
 
 # Features
 - Set up email notifications for order status changes (different email notifications can be set up for each status and store view)
@@ -12,17 +11,13 @@ This extension allows shop owners to set up email notifications for order status
 
 # Installation
 
-1. Install the extension via Magento Connect with the key shown above or copy all the files into your document root.
+1. Copy all the files into your document root.
 2. Clear the cache, logout from the admin panel and then login again.
-3. You can now enable the payment method via System -> Configuration -> MEC Extensions -> MEC Change Order Status
+3. You can now enable the extension via System -> Configuration -> MEC Extensions -> MEC Change Order Status
 
 # Compatibility
 
 - Magento >= 1.6 (tested for 1.9.1)
-
-# Support & Feature-Wishes
-
-If you have any issues or you are missing an feature with this extension, please open an issue on GitHub. Thank you.
 
 
 

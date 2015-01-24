@@ -1,0 +1,14 @@
+"Settings","Settings"
+"Module Enabled","Module Enabled"
+"Send Transaction Email","Send Transaction Email"
+"Send transaction email when order status is changed. The transaction emails are defined in System > Order Statuses.","Send transaction email when order status is changed. The transaction emails are defined in System > Order Statuses."
+"Protect Order State","Protect Order State"
+"By default Magento protects order state to be manually set to Complete and Closed. With this option you can override such behaviour.","By default Magento protects order state to be manually set to Complete and Closed. With this option you can override such behaviour."
+"Change Order Status","Change Order Status"
+"Order Status Notifications","Order Status Notifications"
+"Status","Status"
+"% order(s) status has been changed to %","% order(s) status has been changed to %"
+
+
+
+

@@ -6,7 +6,7 @@ This extension expands core Magento functionality for order status management.
 - Set up email notifications for order status changes (different email notifications can be set up for each status and store view)
 - Change the order status for orders to ANY other order status (including «Complete» and «Closed» statuses).
 - Change order statuses in bulk (mass action on the Orders page)
-- Change order statuses in bulk in comment section on the Order page
+- Change order statuses in comment section on the Order page
 - Multilingual support
 
 # Installation

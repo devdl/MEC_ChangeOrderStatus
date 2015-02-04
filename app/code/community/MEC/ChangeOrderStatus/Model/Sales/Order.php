@@ -59,19 +59,29 @@ class MEC_ChangeOrderStatus_Model_Sales_Order extends Mage_Sales_Model_Order {
                 
                 $senderName = Mage::getStoreConfig('trans_email/ident_sales/name');
                 $senderEmail = Mage::getStoreConfig('trans_email/ident_sales/email');		
-                $sender = array('name' => $senderName,
-                                'email' => $senderEmail);
 	
                 $recepientEmail = $this->getCustomerEmail();
                 $recepientName = $this->getCustomerName();
 
-                $vars = array('customerName' => $recepientEmail,
-		      'customerEmail' => $recepientName,
-                      'order' => $this );
+                $vars = array('customerName' => $recepientEmail, 
+						'customerEmail' => $recepientName,
+						'order' => $this );
 
-                Mage::getModel('core/email_template')
-                        ->sendTransactional($templateId, $sender, $recepientEmail, $recepientName, $vars, $storeId);
+				$mailer = Mage::getModel('core/email_template_mailer');
+                $emailInfo = Mage::getModel('core/email_info');
+                $emailInfo->addTo($recepientEmail, $recepientName);
+                $mailer->addEmailInfo($emailInfo);
+                $mailer->setSender(Mage::getStoreConfig(self::XML_PATH_EMAIL_IDENTITY, $storeId));
+                $mailer->setStoreId($storeId);
+                $mailer->setTemplateId($templateId);
+                $mailer->setTemplateParams($vars);
 
+                $emailQueue = Mage::getModel('core/email_queue');
+                $emailQueue->setEntityId( uniqid() )
+                        ->setEntityType(self::ENTITY)
+                        ->setEventType(self::EMAIL_EVENT_NAME_NEW_ORDER);
+
+                $mailer->setQueue($emailQueue)->send();
             }
 
         } catch (Exception $e) {

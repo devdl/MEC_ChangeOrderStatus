@@ -92,26 +92,7 @@
                     </files>
                 </Osmibit_Erpsync>
             </modules>
-        </translate>        
-        <acl>
-            <resources>
-                <admin>
-                    <children>
-                        <system>
-                            <children>
-                                <config>
-                                    <children>
-                                        <changeorderstatus>
-                                            <title>MEC Change Order Status</title>
-                                        </changeorderstatus>
-                                    </children>
-                                </config>
-                            </children>
-                        </system>
-                    </children>
-                </admin>
-            </resources>
-        </acl>    
+        </translate>
     </adminhtml>       
     <default>
         <changeorderstatus>

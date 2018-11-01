@@ -48,4 +48,9 @@ class MEC_ChangeOrderStatus_Adminhtml_ChangeorderstatusController extends Mage_A
         $this->_redirect('/sales_order/');        
         
     }
+    
+    protected function _isAllowed()
+    {
+        return Mage::getSingleton('admin/session')->isAllowed('system/config/changeorderstatus');
+    }
 }

@@ -1,4 +1,4 @@
-# MEC Change Order Status - Mangeto Extension
+# MEC Change Order Status - Magento v1 Extension
 
 This extension expands core Magento functionality for order status management.
 

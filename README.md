@@ -17,11 +17,23 @@ This extension expands core Magento functionality for order status management.
 
 # Compatibility
 
-- Magento >= 1.6 (tested for 1.9.1)
+- Magento >= 1.6 (tested for 1.9.3.10)
 
 # Copyright
 
 (c) 2015 devdl
+
+# The original module seems abandoned 
+PR: https://github.com/devdl/MEC_ChangeOrderStatus/pull/2 has not been merged for over a year.
+
+I have clients who actively use this module, so I forked this and will add any fixes etc here.
+
+Fixed:
+
+1.0.0 : Remove old admin router definition
+1.0.1 : Permisisons are wrong. If user is not admin role (all perms) they cannot change order status. The module exposes 'MEC Change Order Status' permisisons, so code was adjusted to use that value when set in role perms
+
+
 
 
 

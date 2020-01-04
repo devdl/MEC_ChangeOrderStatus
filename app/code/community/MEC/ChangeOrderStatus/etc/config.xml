@@ -2,7 +2,7 @@
 <config>
     <modules>
         <MEC_ChangeOrderStatus>
-            <version>1.0.0</version>
+            <version>1.0.1</version>
         </MEC_ChangeOrderStatus>
     </modules>
     <global>
@@ -81,13 +81,6 @@
                     </modules>
                 </args>
             </adminhtml>
-            <changeorderstatus>
-                <use>admin</use>
-                <args>
-                    <module>MEC_ChangeOrderStatus</module>
-                    <frontName>admin_changeorderstatus</frontName>
-                </args>
-            </changeorderstatus>
         </routers>
     </admin>    
     <adminhtml>        
@@ -99,26 +92,7 @@
                     </files>
                 </Osmibit_Erpsync>
             </modules>
-        </translate>        
-        <acl>
-            <resources>
-                <admin>
-                    <children>
-                        <system>
-                            <children>
-                                <config>
-                                    <children>
-                                        <changeorderstatus>
-                                            <title>MEC Change Order Status</title>
-                                        </changeorderstatus>
-                                    </children>
-                                </config>
-                            </children>
-                        </system>
-                    </children>
-                </admin>
-            </resources>
-        </acl>    
+        </translate>
     </adminhtml>       
     <default>
         <changeorderstatus>
